@@ -7,5 +7,5 @@ fn main(){
     let indirimli_toplam = toplam * 85 / 100;
     let tam_kisim = indirimli_toplam / 100; // Kaç tane 100 var?
     let ondalikli_kisim = indirimli_toplam % 100; // 100 e bölümünden kalan kaç
-    println!("{}. {:02} TL", tam_kisim, ondalikli_kisim);
+    println!("{}. {:.4} TL", tam_kisim, ondalikli_kisim);
 }
