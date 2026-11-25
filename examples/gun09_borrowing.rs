@@ -29,11 +29,11 @@ fn main() {
     let r1 = &stoklar;
     println!("{:#?}", r1); // misafir ödünç alma işlemini tamamladı.
     let r2 = &mut stoklar; // şimdi bir başka misafir ödünç alacak ama bu misafirin değişim yapma hakkı da var.
-    // println!("{:#?}", r1); >> Bu satırı çalıştırmayın, kod derlenmez. 
-    // Hata kodu: E0502
-    // Hata sebebi, RUST aynı anda sayısız misafir'e izin verirken, aynı anda hem misafir'e hem de değişiklik yapacak ustaya izin vermez.
-    // RUST der ki, önce usta değişiklik yapsın ardından sen misafirliğe gel.
-    // Ya da önce misafirler evden gitsin, sonra usta tadilata başlasın.
+                           // println!("{:#?}", r1); >> Bu satırı çalıştırmayın, kod derlenmez.
+                           // Hata kodu: E0502
+                           // Hata sebebi, RUST aynı anda sayısız misafir'e izin verirken, aynı anda hem misafir'e hem de değişiklik yapacak ustaya izin vermez.
+                           // RUST der ki, önce usta değişiklik yapsın ardından sen misafirliğe gel.
+                           // Ya da önce misafirler evden gitsin, sonra usta tadilata başlasın.
 
     // Clone ile & Farkı
     // Clone orijinal verinin kopyasını oluşturur, ancak büyük miktardaki verileri kopyalamak bilgisayarı yorar.
