@@ -1,7 +1,7 @@
-fn main(){
-    // 1. Bölüm 
+fn main() {
+    // 1. Bölüm
     println!("{}", 0.1 + 0.2); // Bilgisayarlar sayıları binary formatta sakladığı için hesaplamalarda çok ufak farklılıklar çıkabilir. Bu durum da bakiye bilgisi gibi hassas bilgilerde ufak da olsa yanlışlığa sebep olabilir.
-    let kurus: [u32;3] = [1250, 4500, 35000];
+    let kurus: [u32; 3] = [1250, 4500, 35000];
     let _ust_limit = 1_000_000_u32; // Daha okunabilir gözükmesi için
     let toplam: u32 = kurus.iter().sum();
     let indirimli_toplam = toplam * 85 / 100;

@@ -7,12 +7,13 @@ fn tl_formatla(kurus: u32) -> String {
     let (tam_kisim, kuruslu_kisim) = kurus_to_tl(kurus);
     format!("{}.{:02}", tam_kisim, kuruslu_kisim)
 }
-fn ozet(satislar: &[u32]) -> (u32, u32, u32) { // içinde u32 tipini barındıran bir array ödünç alınıyor. Sahipliği hala kendisinde !!
+fn ozet(satislar: &[u32]) -> (u32, u32, u32) {
+    // içinde u32 tipini barındıran bir array ödünç alınıyor. Sahipliği hala kendisinde !!
     let mut toplam = 0;
     let mut en_dusuk = satislar[0]; // 1250 TL
     let mut en_yuksek = satislar[0]; // 1250 TL
     for &satis in satislar {
-        if en_dusuk > satis { 
+        if en_dusuk > satis {
             en_dusuk = satis
         }
         if en_yuksek < satis {
@@ -32,7 +33,7 @@ fn yazdir(baslik: &str, satislar: &[u32]) {
         tl_formatla(en_yuksek),
     );
 }
-fn main(){
+fn main() {
     let haftalik: [u32; 7] = [125000, 98050, 143075, 110000, 167525, 210000, 189950]; // [T; Length]
     yazdir("Haftalık Genel Durum", &haftalik);
     println!();
@@ -47,6 +48,6 @@ fn main(){
 
 /*
 Array vs Slice
-Slice; verinin referansını alan, veriye bakış atan bir pencere, boyutu runtime'da belli oluyor. 
+Slice; verinin referansını alan, veriye bakış atan bir pencere, boyutu runtime'da belli oluyor.
 Array, boyutu sabit-compile time'da belli, verinin sahibi.
 */

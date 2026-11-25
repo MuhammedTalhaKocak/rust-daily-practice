@@ -6,7 +6,7 @@ struct Urun {
     adet: u32,
     birim_kurus: u32,
 }
-impl fmt::Display for Urun  {
+impl fmt::Display for Urun {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         let (tam_kisim, kuruslu_kisim) = kurus_to_tl(self.birim_kurus);
         let fiyat = format!("{}.{:02}", tam_kisim, kuruslu_kisim);
@@ -46,7 +46,7 @@ fn main() {
     };
     let urunler = [urun1, urun2, urun3];
     println!("{:<13} {:>4} {:>9}", "Ürün", "Adet", "Fiyat");
-    for urun in &urunler{
+    for urun in &urunler {
         println!("{}", urun);
     }
     println!("{}", "-".repeat(28));
@@ -54,7 +54,7 @@ fn main() {
     let ust_limit = 1_000_000_u32; // Üst Limit = 1_000_000 kuruş = 10.000 TL
     if toplam > ust_limit {
         eprintln!("Toplam sepet tutarı ÜST limitten büyük olamaz!");
-        return
+        return;
     }
     let (odenecek_tutar, toplam_uygulanan_indirim) = indirim(toplam, 15);
     let formatli_ara_toplam = tl_formatla(toplam);
