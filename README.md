@@ -49,7 +49,7 @@ Rust'ı her gün küçük adımlarla, kod yazarak öğrendiğim çalışma repos
 | 8 | Ownership, move, clone | `move_semantics` 1–3 | Ürün listesinin sahipliğini fonksiyonlar arasında taşıma | ✅ |
 | 9 | Borrowing (`&`, `&mut`) | `move_semantics` 4–5 | Stok güncelleme (mutable borrow) | ✅ |
 | 10 | `String` ve `&str`, string metotları, slicing | `strings` | Ürün kodu ayrıştırıcı | ✅  |
-| 11 | **Mini proje 1** | `structs` 1 | Ürün etiketi metin işleyici | ⬜ |
+| 11 | **Mini proje 1** | `structs` 1 | Ürün etiketi metin işleyici | ✅ |
 
 ### Blok 2 — Struct, impl, Enum, match, Option
 
