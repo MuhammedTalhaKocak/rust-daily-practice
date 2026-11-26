@@ -55,7 +55,7 @@ Rust'ı her gün küçük adımlarla, kod yazarak öğrendiğim çalışma repos
 
 | Gün | Konu | Rustlings | Görev | Durum |
 |---|---|---|---|---|
-| 12 | Struct, method, `impl` | `structs` 2–3 | Sepet struct'ı ve metotları | ⬜ |
+| 12 | Struct, method, `impl` | `structs` 2–3 | Sepet struct'ı ve metotları | ✅ |
 | 13 | Enum ve `match` | `enums` | Sipariş durumu (state) | ⬜ |
 | 14 | `Option` | `options` | Ürün arama (bulunamazsa `None`) | ⬜ |
 | 15 | **Mini proje 2** | `modules` | Sipariş durum takip sistemi | ⬜ |
