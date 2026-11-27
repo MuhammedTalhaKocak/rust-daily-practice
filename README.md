@@ -57,7 +57,7 @@ Rust'ı her gün küçük adımlarla, kod yazarak öğrendiğim çalışma repos
 |---|---|---|---|---|
 | 12 | Struct, method, `impl` | `structs` 2–3 | Sepet struct'ı ve metotları | ✅ |
 | 13 | Enum ve `match` | `enums` | Sipariş durumu (state) | ✅ |
-| 14 | `Option` | `options` | Ürün arama (bulunamazsa `None`) | ⬜ |
+| 14 | `Option` | `options` | Ürün arama (bulunamazsa `None`) | ✅ |
 | 15 | **Mini proje 2** | `modules` | Sipariş durum takip sistemi | ⬜ |
 
 ### Blok 3 — Flow control, döngüler, ileri pattern matching
